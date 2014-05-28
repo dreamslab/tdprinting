@@ -17,4 +17,25 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="TdPrintingTheme" parent="android:style/Theme.Holo.Light">
+        <!-- Set background color here will also affect action bar -->
+        <!-- <item name="android:background">@color/default_activity_bg</item> -->
+
+        <!-- <item name="android:textColorPrimaryInverse">@android:color/primary_text_light</item> -->
+
+        <item name="android:actionBarStyle">@style/TdPrintingTheme.ActionBar</item>
+    </style>
+
+    <style name="TdPrintingTheme.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/default_action_bar_bg</item>
+        <!-- <item name="android:backgroundSplit">@color/default_action_bar_bg</item> -->
+
+        <item name="android:titleTextStyle">@style/TdPrintingTheme.ActionBar.TitleText</item>
+    </style>
+
+    <style name="TdPrintingTheme.ActionBar.TitleText"
+            parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
 </resources>
