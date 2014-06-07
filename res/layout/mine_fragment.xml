@@ -4,11 +4,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/tab_label_mine"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:background="@drawable/mine_header_not_login_bg"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:background="@drawable/btn_login_bg"
+            android:text="@string/btn_login_register"
+            android:textSize="16sp"
+            />
+    </FrameLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="6"
+        android:paddingLeft="@dimen/list_item_left_padding"
+        android:paddingRight="@dimen/list_item_right_padding"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dip"
         />
 
 </LinearLayout>

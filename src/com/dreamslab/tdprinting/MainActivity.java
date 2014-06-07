@@ -65,12 +65,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.myorder) {
-            Intent intent = new Intent(TdPrintingConstants.ACTION_MYORDER);
-            startActivity(intent);
-            return true;
-        }
         return super.onOptionsItemSelected(item);
     }
 

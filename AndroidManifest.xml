@@ -31,11 +31,11 @@
         </activity>
         <activity
             android:name="com.dreamslab.tdprinting.order.OrderActivity"
-            android:label="@string/myorder"
+            android:label="@string/my_orders"
             android:theme="@style/TdPrintingTheme"
             >
             <intent-filter>
-                <action android:name="dreamslab.intent.action.ACTION_MYORDER" />
+                <action android:name="dreamslab.intent.action.ACTION_ORDER" />
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
